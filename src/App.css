@@ -1,0 +1,167 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #172554;
+  color: white;
+  padding: 18px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #93c5fd;
+}
+
+/* Home Hero */
+.hero {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  margin-bottom: 15px;
+}
+
+/* Page Banner */
+.page-banner {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.page-banner h1 {
+  font-size: 36px;
+}
+
+/* Sections */
+.section {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #172554;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.light {
+  background: #eff6ff;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 25px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.btn {
+  background: #172554;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+/* Footer */
+.footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .page-banner h1 {
+    font-size: 28px;
+  }
+}
